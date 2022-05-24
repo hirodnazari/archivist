@@ -5,7 +5,7 @@ import os
 
 print('The archivist is waking up')
 
-bot = commands.Bot(intents=discord.Intents.default())
+bot = commands.Bot(intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
