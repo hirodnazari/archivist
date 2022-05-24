@@ -6,4 +6,10 @@ Primary dependencies necessary for function:
 - [dotenv](https://pypi.org/project/python-dotenv/) - a python .env manager for hiding important information (guild id, token)
 - [markovify](https://github.com/jsvine/markovify) - generates markov chains for the primary command
 
+In order for the bot to function on your device, you must install all of the above dependencies, as well as create a .env file. This file must contain 2 lines:
+```
+TOKEN=[Your Token]
+GUILD_ID=[ID of the server the bot is being operated on]
+```
+
 The current primary feature of the bot is a Markov chain generation through scraping the entire server's messages. This feature is provided largely by code from [wid-bot](https://github.com/ericpretzel/wid-bot). 
