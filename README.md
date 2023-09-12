@@ -1,5 +1,5 @@
 # archivist
-A bot for the good ones server, meant to archive events and people as well as any miscellaneous functions.
+A bot for the good ones server, meant to archive events and people as well as other miscellaneous functions.
 
 Primary dependencies necessary for function:
 - [Pycord](https://github.com/Pycord-Development/pycord) - a [discord.py](https://github.com/Rapptz/discord.py) fork for interacting with the Discord API
@@ -12,4 +12,4 @@ TOKEN=[Your Token]
 GUILD_ID=[ID of the server the bot is being operated on]
 ```
 
-The current primary feature of the bot is a Markov chain generation through scraping the entire server's messages. This feature is provided largely by code from [wid-bot](https://github.com/ericpretzel/wid-bot). 
+The current primary feature of the bot is a Markov chain message generator by  scraping the entire server's message history. This feature is provided largely by code from [wid-bot](https://github.com/ericpretzel/wid-bot). 
