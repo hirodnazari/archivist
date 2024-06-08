@@ -1,0 +1,1 @@
+This folder should be used for data storage of any command. By default, the summon demons command will create the demons folder here, then server-specific subfolders within.
