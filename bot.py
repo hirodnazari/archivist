@@ -2,8 +2,7 @@ import discord
 from discord.ext import commands
 import setter
 import os
-
-print('The archivist is waking up')
+import sys
 
 bot = commands.Bot(intents=discord.Intents.all())
 

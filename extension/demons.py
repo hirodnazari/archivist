@@ -1,5 +1,7 @@
 import setter
 import discord
+import markovify
+import os
 from discord.ext import commands
 from discord.commands import user_command, slash_command, permissions
 from discord.utils import escape_mentions
@@ -21,12 +23,11 @@ class Demons(commands.Cog):
         if len(message) > 2000:
             message = message[:2000-3] + '...'
         await ctx.respond(message)
-
     @slash_command(
         description="Begin the ritual.",
         guild_ids=[setter.GUILD_ID]
     )
-    @permissions.is_owner()
+    @commands.is_owner()
     async def summon_demons(self, ctx: discord.ApplicationContext):
         """
         Fetches every single message from the server.
