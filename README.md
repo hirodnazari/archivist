@@ -6,7 +6,9 @@ Primary dependencies necessary for function:
 - [dotenv](https://pypi.org/project/python-dotenv/) - a python .env manager for hiding important information (guild id, token)
 - [markovify](https://github.com/jsvine/markovify) - generates markov chains for the primary command
 
-In order for the bot to function on your device, you must install all of the above dependencies, as well as create a .env file. This file must contain 2 lines:
+In order for the bot to function on your device, you must install all of the above dependencies, as well as create a .env file.
+
+The .env file should look like below. Your bot's token can be found [like this.](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token#fetching-your-bots-token) Server ID can be found by right clicking server in developer mode, then pressing the "Copy ID" popup.
 ```
 TOKEN=[Your Token]
 GUILD_ID=[ID of the server the bot is being operated on]
