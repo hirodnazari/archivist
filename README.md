@@ -13,14 +13,18 @@ The .env file should look like below. Your bot's token can be found [like this.]
 TOKEN=[Your Token]
 GUILD_ID=[ID of the server the bot is being operated on]
 ```
-
-Once the .env file is set up, install necessary dependencies by running:
+Once the .env file is set up, install dependencies in Pipfile with:
 ```
-pipenv install py-cord
-pipenv install markovify
-pipenv install audioop-lts
+pipenv install [dependency]
 ```
-
+Confirm all dependencies are usable with
+```
+pipenv sync
+```
+Once it's ready to go, run the bot with
+```
+pipenv run python3 bot.py
+```
 The current primary feature of the bot is a Markov chain message generator by scraping the entire server's message history. This feature is provided largely by code from [wid-bot](https://github.com/ericpretzel/wid-bot). 
 
 Please note that this bot does not have any audio features, but rather requires install of audioop-lts due to issues with py-cord.
