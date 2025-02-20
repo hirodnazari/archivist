@@ -1,5 +1,5 @@
 # archivist
-A bot for the Dorkcord server, meant to archive events and people as well as other miscellaneous functions.
+A bot for the Dorkcord server, with commands requested by users or dreamt up by the server owner.
 
 Primary dependencies necessary for function:
 - [Pycord](https://github.com/Pycord-Development/pycord) - a [discord.py](https://github.com/Rapptz/discord.py) fork for interacting with the Discord API
@@ -14,6 +14,13 @@ TOKEN=[Your Token]
 GUILD_ID=[ID of the server the bot is being operated on]
 ```
 
-Once the .env file is set up, create a pipenv environment for the bot. If it does not work at this stage, check path config or install dependencies within the virtual environment.
+Once the .env file is set up, install necessary dependencies by running:
+```
+pipenv install py-cord
+pipenv install markovify
+pipenv install audioop-lts
+```
 
-The current primary feature of the bot is a Markov chain message generator by  scraping the entire server's message history. This feature is provided largely by code from [wid-bot](https://github.com/ericpretzel/wid-bot). 
+The current primary feature of the bot is a Markov chain message generator by scraping the entire server's message history. This feature is provided largely by code from [wid-bot](https://github.com/ericpretzel/wid-bot). 
+
+Please note that this bot does not have any audio features, but rather requires install of audioop-lts due to issues with py-cord.
